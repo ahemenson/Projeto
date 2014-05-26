@@ -9,14 +9,14 @@ public class ProjetoTeste {
 	@Test
 	public void testaNomes(){
 		Pessoa P = new Pessoa();
-		P.adicionaNome("João");				
+		P.adicionaNome("Joï¿½o");				
 		assertFalse("esperado que seja falso", P.isNome("Lucas"));
-		assertTrue("esperado que seja verdadeiro", P.isNome("João"));
+		assertTrue("esperado que seja verdadeiro", P.isNome("Joï¿½o"));
 		P.mudaNome("Pedro");
-		assertFalse("esperado que seja falso", P.isNome("João"));
+		assertFalse("esperado que seja falso", P.isNome("Joï¿½o"));
 		assertTrue("esperado que seja verdadeiro", P.isNome("Pedro"));
 		assertEquals("esperado que seja igual", "Pedro", P.getNome());
-		assertNotNull("esperado que não seja null", P.getNome());
+		assertNotNull("esperado que nï¿½o seja null", P.getNome());
 		
 		
 	}
@@ -32,7 +32,7 @@ public class ProjetoTeste {
 		assertFalse("esperado que seja falso", P2.isIdade(30));
 		
 		
-		
+//colaborando no projeto		
 	}
 
 	
